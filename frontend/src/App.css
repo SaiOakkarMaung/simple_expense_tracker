@@ -1,0 +1,60 @@
+body { font-family: Arial, Helvetica, sans-serif; margin:0; padding:0; background:#dddddd; color:#111; }
+.container { max-width:960px; margin: 0 auto; padding:16px; }
+.card { background:#fff; padding:12px; border-radius:8px; box-shadow:3px 5px rgba(0, 0, 0, 0.06); margin-bottom:12px;}
+.header { display:flex; justify-content:space-between; align-items:center; margin: 0; }
+input, select { padding:8px; margin:6px 0; width:100%; box-sizing:border-box; }
+.btn, button { flex: 1; font-weight:600; padding:8px 12px; margin-top:8px; cursor:pointer; border-radius: 8px; box-shadow: 2px 4px #999; }
+.btn, button:active { box-shadow: 1px 1px #666; transform: translateY(4px);}
+.nav { display:flex; gap:8px; }
+.expense-item { display:flex; justify-content:space-between; align-items:center; padding:8px 0; border-bottom:1px solid #eee; }
+.small { font-size:0.9rem; color:#666; }
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.add-expense-btn{
+    background-color: #fcbf49;
+}
+.add-expense-btn:hover{
+    background-color: #f77f00;
+}
+
+.filter-expense-btn{
+    background-color: #8ecae6;
+}
+.filter-expense-btn:hover{
+    background-color: #219ebc;
+}
+
+.delete-btn{
+    background-color: #ef233c;
+}
+.delete-btn:hover{
+    background-color: #d90429;
+}
+
+.edit-btn{
+    flex: 1;
+    background-color: #8ecae6;
+}
+.edit-btn:hover{
+    background-color: #219ebc;
+}
+
+.dashboard-format{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.actions {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.popup-title {
+    text-align: center;
+}
