@@ -6,7 +6,7 @@ export default function AddExpense({ onAdd, onClose }) {
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
   const [category, setCategory] = useState("Food");
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
 
   const categories = [
     "Food",
@@ -85,6 +85,7 @@ export default function AddExpense({ onAdd, onClose }) {
           <input
             type="date"
             value={date}
+            max={new Date().toISOString().split("T")[0]} 
             onChange={(e) => setDate(e.target.value)}
             required
           />

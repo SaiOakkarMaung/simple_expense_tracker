@@ -5,7 +5,7 @@ import "./EditExpense.css";
 
 export default function EditExpense({ expense, onClose, onUpdate }) {
   const [title, setTitle] = useState(expense.title);
-  const [amount, setAmount] = useState(String(expense.amount));   // convert to string for filtering
+  const [amount, setAmount] = useState(String(expense.amount)); // convert to string for filtering
   const [category, setCategory] = useState(expense.category);
   const [date, setDate] = useState(expense.date.substring(0, 10));
 
@@ -49,7 +49,7 @@ export default function EditExpense({ expense, onClose, onUpdate }) {
       <div className="modal-card">
         <h2 className="popup-title">Edit Expense</h2>
         <hr />
-        
+
         <form onSubmit={submit}>
           <input
             value={title}
@@ -85,12 +85,15 @@ export default function EditExpense({ expense, onClose, onUpdate }) {
           <input
             type="date"
             value={date}
+            max={new Date().toISOString().split("T")[0]} 
             onChange={(e) => setDate(e.target.value)}
             required
           />
 
           <div className="actions">
-            <button type="submit" className="edit-btn">Update</button>
+            <button type="submit" className="edit-btn">
+              Update
+            </button>
             <button type="button" onClick={onClose}>
               Cancel
             </button>
