@@ -1,3 +1,29 @@
+/*force light mode8*/
+html, body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.card,
+.expense-item,
+.add-modal,
+.add-modal-backdrop,
+.modal-card {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+input,
+select {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+button {
+  background-color: #f5f5f5 !important;
+  color: #000000 !important;
+}
+
 body { font-family: Arial, Helvetica, sans-serif; margin:0; padding:0; background:#dddddd; color:#111; }
 .container { max-width:960px; margin: 0 auto; padding:16px; }
 .card { background:#fff; padding:12px; border-radius:8px; box-shadow:3px 5px rgba(0, 0, 0, 0.06); margin-bottom:12px;}

@@ -11,7 +11,7 @@ export default function Navbar({ token, setToken }) {
 
   return (
     <div className="card header">
-      <div style={{ fontSize: 30, }}><strong>ExpenseTracker</strong></div>
+      <div style={{ fontSize: 25, }}><strong>ExpenseTracker</strong></div>
       <div className="nav">
         {token ? (
           <>
