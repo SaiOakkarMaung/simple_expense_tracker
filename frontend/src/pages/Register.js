@@ -12,7 +12,7 @@ export default function Register() {
   const submit = async (e) => {
     e.preventDefault();
     try {
-      await API.post("/api/auth/register", { name, email, password });
+      await API.post("/auth/register", { name, email, password });
       navigate("/login");
     } catch (error) {
       setErr(error.response?.data?.error || "Registration failed");

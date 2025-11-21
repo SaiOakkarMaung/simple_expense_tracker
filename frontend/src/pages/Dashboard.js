@@ -23,7 +23,7 @@ export default function Dashboard() {
 
   // Fetch data from API
   const fetch = async () => {
-    const res = await API.get("/api/expenses");
+    const res = await API.get("/expenses");
     setAllExpenses(res.data);
     setExpenses(res.data);
   };
