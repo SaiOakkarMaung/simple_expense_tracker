@@ -47,7 +47,7 @@ export default function ExpenseList({ expenses, onDelete, onEdit }) {
 
     return (
       <div className="card">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <hr />
 
         {visible.map((e) => (
