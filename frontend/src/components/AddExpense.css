@@ -14,7 +14,7 @@
 
 /* POPUP CARD */
 .add-modal {
-  background: white;
+  background: white !important;
   width: 90%;
   max-width: 380px;
   padding: 20px;
